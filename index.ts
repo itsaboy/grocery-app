@@ -9,6 +9,6 @@ const app = new Elysia()
         prefix: '/out'
     }))
 	.get('/', () => Bun.file('./out/index.html'))
-	.listen(3366)
+	.listen({port})
 
 console.log(`🦊 Server is listening on port ${app.server?.port}`)
