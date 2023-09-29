@@ -1,51 +1,73 @@
 .body-container {
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-    grid-template-columns: 1fr;
-    height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
 }
 
 .header-container {
-    display: grid;
-    grid-template-areas: 
+  display: grid;
+  grid-template-areas:
     "title"
     "input";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    height: 100%;
-    gap: 1rem;
-    place-items: center;
-    margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  gap: 1rem;
+  place-items: center;
+  margin: 0 auto;
 }
 
 .input-container {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
 }
 
 .main-container {
-    display: grid;
-    grid-template-rows: 3rem 1fr;
-    grid-template-columns: 1fr;
-    width: 75%;
-    gap: 1rem;
-    place-items: center;
-    margin: 2rem auto;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  grid-template-columns: 1fr;
+  width: 75%;
+  gap: 1rem;
+  place-items: center;
+  margin: 2rem auto;
+}
+
+.main-heading-wrapper {
+  display: grid;
+  width: clamp(15rem, 66vw + 1px, 100rem);
 }
 
 .items-container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    place-items: center start;
-    margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  place-items: center;
+  margin: 0 auto;
 }
 
 .item-container {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr 1fr;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+
+.btn1-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem;
+  place-items: center;
+}
+
+.btn2-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+  place-items: center;
 }

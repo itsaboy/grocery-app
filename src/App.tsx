@@ -54,7 +54,7 @@ const App = () => {
 
   return (
     <>
-      <div className="body-container">
+      <div className="body-container font-primary">
         <PageHeader
           newItem={newItem}
           handleNewItem={handleNewItem}

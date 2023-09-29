@@ -3,3 +3,8 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@font-face {
+    font-family: Work Sans;
+    src: url("/out/assets/fonts/WorkSans.ttf") format("truetype");
+}

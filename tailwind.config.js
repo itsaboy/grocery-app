@@ -5,7 +5,14 @@ export default {
     "./out/**/*.{html,js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: "Work Sans",
+      },
+    },
+  },
+  variants: {
+    fill: ['hover', 'focus'], 
   },
   plugins: [],
 }
