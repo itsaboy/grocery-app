@@ -23487,7 +23487,7 @@ var PageHeader = ({ newItem, handleNewItem, handleSubmit }) => {
       children: [
         jsx_dev_runtime.jsxDEV("h1", {
           id: "title",
-          className: "text-6xl text-blue-200",
+          className: "text-6xl text-blue-200 font-semibold",
           children: "Grocery List"
         }, undefined, false, undefined, this),
         jsx_dev_runtime.jsxDEV("div", {
@@ -23503,7 +23503,7 @@ var PageHeader = ({ newItem, handleNewItem, handleSubmit }) => {
             }, undefined, false, undefined, this),
             jsx_dev_runtime.jsxDEV("button", {
               id: "new-button",
-              className: "bg-blue-800 text-blue-100 text-xl py-2 px-8 border-2 border-blue-100 rounded-lg hover:bg-blue-400 hover:text-blue-950 hover:border-8",
+              className: "bg-blue-800 text-blue-100 text-xl py-2 px-8 border-2 border-blue-100 rounded-lg hover:bg-blue-400 hover:text-blue-950 hover:border-4",
               onClick: handleSubmit,
               children: "Add"
             }, undefined, false, undefined, this)
@@ -23518,12 +23518,13 @@ var PageHeader = ({ newItem, handleNewItem, handleSubmit }) => {
 var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var ListItem = ({ items, handleDelete }) => {
   return jsx_dev_runtime2.jsxDEV("li", {
+    className: "p-4",
     children: jsx_dev_runtime2.jsxDEV("div", {
       className: "item-container",
       children: [
         items.text,
         jsx_dev_runtime2.jsxDEV("button", {
-          className: "bg-red-600 text-red-200 text-lg border-2 border-red-950 rounded-md w-24 mx-2 py-1 px-4 hover:bg-red-400 hover:text-red-950 hover:border-8",
+          className: "bg-red-600 text-red-200 text-lg border-2 border-red-950 rounded-md w-24 mx-2 py-1 px-4 hover:bg-red-400 hover:text-red-950 hover:border-4",
           onClick: () => handleDelete(items.id),
           children: "Delete"
         }, undefined, false, undefined, this)
@@ -23541,7 +23542,7 @@ var PageMain = ({ items, handleDelete }) => {
       className: "main-container",
       children: [
         jsx_dev_runtime3.jsxDEV("h2", {
-          className: "bg-blue-200 text-blue-950 text-4xl text-center font-semibold w-1/2 mx-auto p-2 rounded-lg",
+          className: "bg-blue-200 text-blue-950 text-4xl text-center font-semibold w-1/2 mx-auto p-4 border-b-2 border-blue-800 rounded-lg",
           children: "Items"
         }, undefined, false, undefined, this),
         jsx_dev_runtime3.jsxDEV("ul", {
@@ -23549,7 +23550,10 @@ var PageMain = ({ items, handleDelete }) => {
           children: jsx_dev_runtime3.jsxDEV("div", {
             className: "items-container",
             children: [
-              items.length === 0 && "No items yet",
+              items.length === 0 && jsx_dev_runtime3.jsxDEV("h2", {
+                className: "p-4",
+                children: "No Items"
+              }, undefined, false, undefined, this),
               items.map((items2) => {
                 return jsx_dev_runtime3.jsxDEV(ListItem, {
                   items: items2,

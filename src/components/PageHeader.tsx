@@ -8,7 +8,7 @@ export const PageHeader = ({ newItem, handleNewItem, handleSubmit }: Props) => {
   return (
     <header className="bg-gradient-to-b from-blue-600 to-blue-500 border-b-4 border-blue-950">
       <div className="header-container">
-        <h1 id="title" className="text-6xl text-blue-200">
+        <h1 id="title" className="text-6xl text-blue-200 font-semibold">
           Grocery List
         </h1>
         <div id="input" className="input-container">
@@ -21,7 +21,7 @@ export const PageHeader = ({ newItem, handleNewItem, handleSubmit }: Props) => {
           />
           <button
             id="new-button"
-            className="bg-blue-800 text-blue-100 text-xl py-2 px-8 border-2 border-blue-100 rounded-lg hover:bg-blue-400 hover:text-blue-950 hover:border-8"
+            className="bg-blue-800 text-blue-100 text-xl py-2 px-8 border-2 border-blue-100 rounded-lg hover:bg-blue-400 hover:text-blue-950 hover:border-4"
             onClick={handleSubmit}
           >
             Add

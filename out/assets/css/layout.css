@@ -27,7 +27,7 @@
 
 .main-container {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 3rem 1fr;
     grid-template-columns: 1fr;
     width: 75%;
     gap: 1rem;

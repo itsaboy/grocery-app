@@ -5,11 +5,11 @@ type Props = {
 
 export const ListItem = ({ items, handleDelete }: Props) => {
   return (
-    <li>
+    <li className="p-4">
       <div className="item-container">
         {items.text}
         <button
-          className="bg-red-600 text-red-200 text-lg border-2 border-red-950 rounded-md w-24 mx-2 py-1 px-4 hover:bg-red-400 hover:text-red-950 hover:border-8"
+          className="bg-red-600 text-red-200 text-lg border-2 border-red-950 rounded-md w-24 mx-2 py-1 px-4 hover:bg-red-400 hover:text-red-950 hover:border-4"
           onClick={() => handleDelete(items.id)}
         >
           Delete
