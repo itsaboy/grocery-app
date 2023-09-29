@@ -29,7 +29,7 @@
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 75%;
     gap: 1rem;
     place-items: center;
     margin: 2rem auto;
@@ -42,4 +42,10 @@
     gap: 1rem;
     place-items: center start;
     margin: 0 auto;
+}
+
+.item-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
 }

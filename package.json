@@ -21,7 +21,7 @@
   "scripts": {
     "deploy": "bun run index.ts",
     "deploy:hot": "bun --watch index.ts",
-    "build": "bun build ./src/main.tsx --outfile=./out/index.js",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./out/assets/css/style.css && bun build ./src/main.tsx --outfile=./out/index.js",
     "watch": "bun build ./src/main.tsx --outfile=./out/index.js --watch",
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./out/assets/css/style.css",
     "watch:css": "tailwindcss -i ./src/tailwind.css -o ./out/assets/css/style.css --watch"

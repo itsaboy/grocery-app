@@ -21,7 +21,7 @@ export const PageHeader = ({ newItem, handleNewItem, handleSubmit }: Props) => {
           />
           <button
             id="new-button"
-            className="bg-blue-800 text-blue-100 text-xl py-2 px-8 border-2 border-blue-100 rounded-lg"
+            className="bg-blue-800 text-blue-100 text-xl py-2 px-8 border-2 border-blue-100 rounded-lg hover:bg-blue-400 hover:text-blue-950 hover:border-8"
             onClick={handleSubmit}
           >
             Add
